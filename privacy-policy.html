@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Auto Vote Clicker — Privacy Policy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex,follow" />
+  <style>
+    body { font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; max-width: 860px; margin: 40px auto; padding: 0 16px; color:#111; }
+    h1 { margin: 0 0 16px; }
+    h2 { margin: 28px 0 8px; }
+    p { margin: 8px 0; }
+    ul { margin: 8px 0 8px 20px; }
+    code { background:#f3f4f6; padding:2px 4px; border-radius:4px; }
+  </style>
+</head>
+<body>
+  <h1>Auto Vote Clicker — Privacy Policy</h1>
+
+  <h2>What this extension does</h2>
+  <p>Opens a specified voting page in a background tab at a scheduled time (or when you click “Vote”) and clicks the Vote/Change Vote button once. The tab auto-closes.</p>
+
+  <h2>Data the extension processes</h2>
+  <p>We read minimal content from the declared voting domains to detect:</p>
+  <ul>
+    <li>Button state: “Vote”, “Change Vote”, or “Voted”.</li>
+    <li>Visible login email string (if the site shows it) to confirm you are logged in.</li>
+  </ul>
+  <p>We record a log entry containing timestamp(s), page URL, entry ID, result (success / already_voted / timeout / not_logged_in / error), and the visible email if present.</p>
+
+  <h2>Where data is sent</h2>
+  <p>Log entries are posted to a Google Apps Script URL owned by the developer for the sole purpose of keeping run history. Data is not sold or shared with third parties.</p>
+
+  <h2>Permissions</h2>
+  <p>Tabs (open background tab), Alarms (daily schedule), Storage (local settings/logs), Downloads (export logs), Host permissions (voting site + the Apps Script endpoint).</p>
+
+  <h2>User control</h2>
+  <p>You can delete the extension at any time (<code>chrome://extensions</code>) and remove your local logs via the browser.</p>
+
+  <h2>Contact</h2>
+  <p>Email: projecthelaedu@gmail.com</p>
+</body>
+</html>
